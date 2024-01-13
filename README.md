@@ -29,3 +29,22 @@ This project is designed to evaluate design and coding skills in creating a robu
 - Verify the correct item is added to the cart before checkout.
 
 
+## Requirements
+- Programming Language: Java
+- Automation Tool: Selenium
+- Browser Compatibility: Chrome
+- Platform Independence: Windows, macOS, Linux
+- Framework Structure: Page Object Model (POM), Singleton Pattern
+- Test Execution: TestNG with parallel test support
+- Configuration: Configurable parameters via properties file
+- Logging: Include appropriate logging to capture events and errors
+## Framework Overview
+### BaseTest Package
+- BaseClass: Manages core setup for launching the browser, Singleton pattern implementation.
+### PageObjects Package
+- HomePage: Represents the Flipkart home page with methods for interacting with it.
+- ProductPage: Manages the product search and selection process.
+- LaptopPage: Handles interactions on the laptop details page, captures details, and adds to the cart.
+- CartPage: Manages interactions within the cart, including verifying the added product and initiating the checkout process.
+### Utilities Package
+- ReadPropertyFile: Reads configuration properties from the config.properties file.
